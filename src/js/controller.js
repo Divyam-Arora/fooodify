@@ -6,7 +6,7 @@ import paginationView from './views/paginationView';
 import bookmarksView from './views/bookmarksView';
 import addRecipeView from './views/addRecipeView';
 import 'core-js/stable';
-import 'regenerator-runtime/runtime';
+import { async } from 'regenerator-runtime/runtime';
 
 // https://forkify-api.herokuapp.com/v2
 
@@ -92,5 +92,6 @@ const init = () => {
   searchView.addSearchHandler(controlSearchResults);
   paginationView.addPaginationHandler(controlPagination);
   addRecipeView.addHandlerSubmit(controlAddRecipe);
+  console.log('Welcome to Forkify!');
 };
 init();
