@@ -1,4 +1,4 @@
-# Forkify
+# Fooodify
 
 Recipe application with custom uploads
 
