@@ -12,6 +12,8 @@ export const state = {
     resultsPerPage: RES_PER_PAGE,
   },
   bookmarks: [],
+  isSearchOpen: false,
+  isSearchWindowOpen: false,
 };
 
 const getRecipeObject = data => {

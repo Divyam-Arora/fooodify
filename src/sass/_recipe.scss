@@ -71,15 +71,25 @@
     justify-content: space-between;
   }
 
+  &__info-group {
+    display: flex;
+    gap: 4.5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
   &__info {
     font-size: 1.65rem;
     text-transform: uppercase;
     display: flex;
     align-items: center;
 
-    &:not(:last-child) {
-      margin-right: 4.5rem;
-    }
+    // &:not(:last-child) {
+    //   margin-right: 4.5rem;
+    // }
   }
 
   &__info-icon {

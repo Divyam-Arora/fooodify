@@ -47,6 +47,10 @@ body {
   min-height: calc(100vh - 2 * 4vw);
 }
 
+.body--no-scroll {
+  overflow-y: hidden;
+}
+
 .container {
   max-width: 120rem;
   min-height: 117rem;
@@ -67,5 +71,9 @@ body {
     max-width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
   }
 }
