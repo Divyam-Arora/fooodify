@@ -27,6 +27,7 @@ class SearchView {
 
   #clear() {
     this.#parentElement.querySelector('.search__field').value = '';
+    this.#parentElement.querySelector('.search__field').blur();
   }
 
   addSearchHandler(handler) {
