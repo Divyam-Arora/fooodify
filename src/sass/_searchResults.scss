@@ -70,7 +70,8 @@
 @media screen and (max-width: $bp-medium) {
   .search-results {
     width: 50vw;
-    min-width: max-content;
+    min-width: min-content;
+    max-width: 100vw;
     position: fixed;
     padding-bottom: 10rem;
     z-index: 5;
