@@ -53,7 +53,8 @@ class SearchView {
 
   toggleWindow(toOpen = null) {
     if (
-      this.#searchWindowButton.classList.contains('search-window__btn-hide')
+      this.#searchWindowButton.classList.contains('search-window__btn-hide') &&
+      state.search.query
     ) {
       this.#searchWindowButton.classList.remove('search-window__btn-hide');
     }
